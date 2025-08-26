@@ -22,6 +22,7 @@ import Home from "./pages/Dashboard/Home";
 export default function App() {
   return (
     <>
+      <div className="glass-background"></div>
       <Router>
         <ScrollToTop />
         <Routes>
