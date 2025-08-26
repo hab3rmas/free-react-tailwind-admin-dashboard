@@ -101,14 +101,14 @@ export default function MonthlySalesChart() {
     setIsOpen(false);
   }
   return (
-    <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white px-5 pt-5 dark:border-gray-800 dark:bg-white/[0.03] sm:px-6 sm:pt-6">
+    <div className="glass-card overflow-hidden">
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
+        <h3 className="text-lg font-semibold" style={{ color: 'var(--glass-text-primary)' }}>
           Monthly Sales
         </h3>
         <div className="relative inline-block">
-          <button className="dropdown-toggle" onClick={toggleDropdown}>
-            <MoreDotIcon className="text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 size-6" />
+          <button className="glass-btn p-2" onClick={toggleDropdown}>
+            <MoreDotIcon className="size-6" style={{ color: 'var(--glass-text-tertiary)' }} />
           </button>
           <Dropdown
             isOpen={isOpen}
